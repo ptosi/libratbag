@@ -61,6 +61,7 @@ enum driver {
 	ASUS,
 	SINOWEALTH,
 	SINOWEALTH_NUBWO,
+	TRUST,
 	OPENINPUT,
 	MARSGAMING,
 };
@@ -225,6 +226,13 @@ init_data_hidpp20(struct ratbag *ratbag,
 		else if(streq(str, "G602"))
 			data->hidpp20.quirk = HIDPP20_QUIRK_G602;
 	}
+}
+
+static void
+init_data_trust(struct ratbag *ratbag,
+		  GKeyFile *keyfile,
+		  struct ratbag_device_data *data)
+{
 }
 
 static void
@@ -453,6 +461,7 @@ static const struct driver_map {
 	{ ASUS, "asus", init_data_asus },
 	{ SINOWEALTH, "sinowealth", init_data_sinowealth },
 	{ SINOWEALTH_NUBWO, "sinowealth_nubwo", NULL},
+	{ TRUST, "trust", init_data_trust },
 	{ OPENINPUT, "openinput", NULL },
 	{ MARSGAMING, "marsgaming", NULL },
 };

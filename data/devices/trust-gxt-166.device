@@ -1,0 +1,5 @@
+[Device]
+Name=Trust GXT 166
+DeviceMatch=usb:145f:01ad
+Driver=trust
+DeviceType=mouse

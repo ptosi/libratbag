@@ -212,6 +212,7 @@ src_libratbag = [
 	'src/driver-marsgaming/marsgaming-leds.c',
 	'src/driver-marsgaming/marsgaming-probe.c',
 	'src/driver-marsgaming/marsgaming-query.c',
+	'src/driver-trust.c',
 	'src/driver-test.c',
 	'src/libratbag.c',
 	'src/libratbag.h',
